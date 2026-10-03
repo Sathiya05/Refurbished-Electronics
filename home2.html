@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReTech | Home 2 — Deals & Top Picks</title>
+<meta name="description" content="Home 2 layout: renewed deals, top picks, condition grades and warranty support for certified refurbished electronics.">
+<meta name="theme-color" content="#166534">
+<link rel="canonical" href="https://www.retech.example/home2.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ReTech | Home 2 — Deals & Top Picks">
+<meta property="og:description" content="Alternate homepage with deal countdown, top picks and transparent grading.">
+<meta property="og:url" content="https://www.retech.example/home2.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23166534'/%3E%3Cpath d='M16 7a9 9 0 1 0 8.5 12' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M21 4h4.5v4.5' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/site.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { 50:'#F2F7F3',100:'#E7F0E5',200:'#D5E4D2',300:'#B9D2B5',400:'#8FBC8C',500:'#5E9A5F',600:'#2F7A45',700:'#166534',800:'#14532D',900:'#0F3A21',DEFAULT:'#166534' },
+          sage:  { 50:'#F4F8F3',100:'#E7F0E5',200:'#D5E4D2',300:'#B9D2B5',400:'#8FBC8C',500:'#5E9A5F',DEFAULT:'#E7F0E5' },
+          ink: '#111827',
+          accent: { 50:'#FFFBEB',100:'#FEF3C7',200:'#FDE68A',300:'#FCD34D',400:'#FBBF24',500:'#F59E0B',600:'#D97706',700:'#B45309',DEFAULT:'#F59E0B' }
+        },
+        fontFamily: { sans: ['"Plus Jakarta Sans"','ui-sans-serif','system-ui','Segoe UI','sans-serif'] },
+        boxShadow: {
+          card: '0 1px 2px rgba(17,24,39,.04), 0 14px 34px -22px rgba(17,24,39,.30)',
+          'card-hover': '0 2px 8px rgba(17,24,39,.06), 0 26px 50px -26px rgba(17,24,39,.38)'
+        },
+        borderRadius: { '4xl': '2rem' },
+        keyframes: {
+          floaty: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } }
+        },
+        animation: { floaty: 'floaty 7s ease-in-out infinite' }
+      }
+    }
+  };
+</script>
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+
+<div id="navbar"></div>
+
+<main id="main">
+
+  <!-- Promo bar -->
+  <div class="bg-brand-900 text-white">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-2.5 text-center text-xs font-semibold sm:flex-row sm:px-6 sm:text-sm lg:px-8">
+      <p>Renewed Sale — extra 10% off phones with code <span class="rounded bg-white/15 px-2 py-0.5 font-bold tracking-wide">RENEW10</span></p>
+      <p class="flex items-center gap-3">
+        <a href="index.html" class="underline underline-offset-2 hover:text-sage-200">Home 1</a>
+        <span aria-hidden="true" class="text-white/40">•</span>
+        <span class="text-sage-200">You are on Home 2</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ============ HERO V2 ============ -->
+  <section class="relative flex min-h-[80vh] flex-col justify-center overflow-hidden bg-brand-900 text-white" aria-labelledby="hero2-title">
+    <img src="./assets/images/hero-desk.jpg" width="1400" height="900" alt="" aria-hidden="true" class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20">
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-900 via-brand-900/85 to-brand-800/40" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand-500/30 blur-3xl" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-accent-500/20 blur-3xl" aria-hidden="true"></div>
+    <div class="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-8 sm:px-6 sm:py-12 lg:grid-cols-12 lg:gap-12 lg:px-8">
+      <div class="lg:col-span-6" data-reveal>
+        <p class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-sage-200 sm:text-xs">
+          <span class="h-2 w-2 animate-pulse rounded-full bg-accent-400" aria-hidden="true"></span>
+          Home 2 · Deals Layout
+        </p>
+        <h1 id="hero2-title" class="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl xl:text-6xl">
+          Premium refurbished, <span class="text-accent-300">priced for everyone.</span>
+        </h1>
+        <p class="mt-5 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+          Top-graded laptops, phones and tablets — battery-tested, data-wiped and backed by warranty. Same ReTech quality, fresh new look.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="products.html" class="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-7 py-3 text-sm font-bold text-brand-800 shadow-sm transition hover:bg-sage-100 sm:text-base">Shop Top Picks</a>
+          <a href="#deals" class="inline-flex min-h-12 items-center justify-center rounded-xl border-2 border-white/50 px-7 py-3 text-sm font-bold text-white transition hover:border-white hover:bg-white/10 sm:text-base">This week's deals</a>
+        </div>
+        <dl class="mt-8 grid max-w-lg grid-cols-3 gap-4">
+          <div class="rounded-2xl border border-white/15 bg-white/10 p-3 text-center backdrop-blur sm:p-4">
+            <dt class="text-[11px] font-bold uppercase tracking-wide text-white/60">Up to</dt>
+            <dd class="text-xl font-extrabold text-white sm:text-2xl">50% off</dd>
+          </div>
+          <div class="rounded-2xl border border-white/15 bg-white/10 p-3 text-center backdrop-blur sm:p-4">
+            <dt class="text-[11px] font-bold uppercase tracking-wide text-white/60">Battery</dt>
+            <dd class="text-xl font-extrabold text-white sm:text-2xl">85%+</dd>
+          </div>
+          <div class="rounded-2xl border border-white/15 bg-white/10 p-3 text-center backdrop-blur sm:p-4">
+            <dt class="text-[11px] font-bold uppercase tracking-wide text-white/60">Warranty</dt>
+            <dd class="text-xl font-extrabold text-white sm:text-2xl">Included</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="lg:col-span-6" data-reveal>
+        <div class="relative">
+          <div class="overflow-hidden rounded-4xl border border-white/20 shadow-card">
+            <img src="./assets/images/hero-desk.jpg" width="1200" height="900" alt="Refurbished laptop, phone and tablet bundle" class="h-full w-full object-cover">
+          </div>
+          <!-- Floating deal card -->
+          <div class="absolute -left-3 top-6 animate-floaty rounded-2xl border border-sage-200 bg-white px-4 py-3 shadow-card sm:-left-6">
+            <p class="text-[11px] font-bold uppercase tracking-wide text-accent-600">Deal ends in</p>
+            <p id="deal-countdown" class="text-lg font-extrabold tabular-nums text-ink" aria-live="polite">23:59:59</p>
+          </div>
+          <div class="absolute -bottom-5 right-4 rounded-2xl border border-sage-200 bg-white px-4 py-3 shadow-card sm:right-8">
+            <p class="flex items-center gap-2 text-sm font-bold text-ink">
+              <span class="grid h-7 w-7 place-items-center rounded-full bg-brand-700 text-white">
+                <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </span>
+              52-point quality check
+            </p>
+            <p class="mt-1 text-xs text-slate-500">Graded · Tested · Warrantied</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="border-b border-sage-200 bg-white" aria-label="Store benefits">
+    <div class="mx-auto grid max-w-7xl grid-cols-2 gap-4 px-4 py-6 sm:px-6 lg:grid-cols-4 lg:px-8">
+      <p class="flex items-center gap-3 text-sm font-semibold" data-reveal><span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sage-100 text-brand-700">✓</span> Quality-checked devices</p>
+      <p class="flex items-center gap-3 text-sm font-semibold" data-reveal><span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sage-100 text-brand-700">◈</span> Transparent grading</p>
+      <p class="flex items-center gap-3 text-sm font-semibold" data-reveal><span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sage-100 text-brand-700">✦</span> Warranty included</p>
+      <p class="flex items-center gap-3 text-sm font-semibold" data-reveal><span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sage-100 text-brand-700">↺</span> 30-day returns</p>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES V2 ============ -->
+  <section class="bg-white py-14 sm:py-20" aria-labelledby="cat2-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between" data-reveal>
+        <div>
+          <h2 id="cat2-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl">Shop by category</h2>
+          <p class="mt-2 text-slate-600">Four lanes, one quality bar.</p>
+        </div>
+        <a href="products.html" class="text-sm font-bold text-brand-700 underline underline-offset-4">View all products →</a>
+      </div>
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <a href="products.html?category=laptops" class="group overflow-hidden rounded-3xl border border-sage-200 bg-sage-50 shadow-card transition hover:-translate-y-1 hover:shadow-card-hover" data-reveal>
+          <img src="./assets/images/cat-laptops.jpg" alt="Refurbished laptops" loading="lazy" class="aspect-[4/3] w-full object-cover transition group-hover:scale-105">
+          <div class="p-5"><h3 class="font-extrabold">Laptops</h3><p class="mt-1 text-sm text-slate-600">From ₹18,999 · Work & study</p></div>
+        </a>
+        <a href="products.html?category=phones" class="group overflow-hidden rounded-3xl border border-sage-200 bg-sage-50 shadow-card transition hover:-translate-y-1 hover:shadow-card-hover" data-reveal>
+          <img src="./assets/images/cat-phones.jpg" alt="Refurbished phones" loading="lazy" class="aspect-[4/3] w-full object-cover transition group-hover:scale-105">
+          <div class="p-5"><h3 class="font-extrabold">Phones</h3><p class="mt-1 text-sm text-slate-600">From ₹8,499 · Battery 85%+</p></div>
+        </a>
+        <a href="products.html?category=tablets" class="group overflow-hidden rounded-3xl border border-sage-200 bg-sage-50 shadow-card transition hover:-translate-y-1 hover:shadow-card-hover" data-reveal>
+          <img src="./assets/images/cat-tablets.jpg" alt="Refurbished tablets" loading="lazy" class="aspect-[4/3] w-full object-cover transition group-hover:scale-105">
+          <div class="p-5"><h3 class="font-extrabold">Tablets</h3><p class="mt-1 text-sm text-slate-600">From ₹11,999 · Learn & play</p></div>
+        </a>
+        <a href="products.html?category=accessories" class="group overflow-hidden rounded-3xl border border-sage-200 bg-sage-50 shadow-card transition hover:-translate-y-1 hover:shadow-card-hover" data-reveal>
+          <img src="./assets/images/cat-accessories.jpg" alt="Refurbished accessories" loading="lazy" class="aspect-[4/3] w-full object-cover transition group-hover:scale-105">
+          <div class="p-5"><h3 class="font-extrabold">Accessories</h3><p class="mt-1 text-sm text-slate-600">From ₹999 · Audio & charging</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOP PICKS ============ -->
+  <section class="bg-sage-50 py-14 sm:py-20" aria-labelledby="picks-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between" data-reveal>
+        <div>
+          <p class="inline-flex rounded-full bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-800">Home 2 exclusive</p>
+          <h2 id="picks-title" class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">This week's top picks</h2>
+          <p class="mt-2 text-slate-600">Hand-picked Excellent-grade units with the best price-to-condition ratio.</p>
+        </div>
+        <a href="products.html" class="inline-flex min-h-11 items-center gap-2 self-start rounded-xl border border-brand-700 px-5 py-2.5 text-sm font-bold text-brand-700 hover:bg-white sm:self-auto">View all →</a>
+      </div>
+      <div class="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4" data-product-grid data-featured-only="true" data-limit="4"></div>
+    </div>
+  </section>
+  <!-- ====================== SELL YOUR DEVICE ====================== -->
+  <section class="bg-white py-14 sm:py-20" aria-labelledby="sell-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        <div class="order-2 lg:order-1" data-reveal>
+          <img src="./assets/images/sell-device.jpg" width="900" height="700" loading="lazy" alt="Person preparing an old laptop for resale and packing it into a ReTech shipping box" class="w-full rounded-4xl border border-sage-200 bg-sage-50 shadow-card">
+        </div>
+        <div class="order-1 lg:order-2" data-reveal>
+          <p class="inline-flex items-center gap-2 rounded-full bg-sage-100 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-800">Trade In</p>
+          <h2 id="sell-title" class="mt-4 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Turn Your Old Device Into Value</h2>
+          <p class="mt-4 text-base leading-relaxed text-slate-600">Have an unused phone, laptop or tablet? Tell us about it and get an estimated trade-in value.</p>
+
+          <ol class="mt-8 grid gap-4 sm:grid-cols-2">
+            <li class="flex gap-3 rounded-2xl bg-sage-50 p-4">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-700 text-sm font-bold text-white">1</span>
+              <span class="text-sm font-semibold text-ink">Tell Us About Your Device</span>
+            </li>
+            <li class="flex gap-3 rounded-2xl bg-sage-50 p-4">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-700 text-sm font-bold text-white">2</span>
+              <span class="text-sm font-semibold text-ink">Receive an Estimate</span>
+            </li>
+            <li class="flex gap-3 rounded-2xl bg-sage-50 p-4">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-700 text-sm font-bold text-white">3</span>
+              <span class="text-sm font-semibold text-ink">Send Your Device</span>
+            </li>
+            <li class="flex gap-3 rounded-2xl bg-sage-50 p-4">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-700 text-sm font-bold text-white">4</span>
+              <span class="text-sm font-semibold text-ink">Get Paid</span>
+            </li>
+          </ol>
+
+          <a href="sell-device.html" class="mt-8 inline-flex min-h-12 items-center justify-center rounded-xl bg-brand-700 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 sm:text-base">
+            Sell Your Device
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ DEAL BANNER ============ -->
+  <section id="deals" class="bg-brand-800 py-14 text-white sm:py-20" aria-labelledby="deals-title">
+    <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+      <div data-reveal>
+        <p class="inline-flex rounded-full bg-white/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-sage-200">Limited time</p>
+        <h2 id="deals-title" class="mt-4 text-3xl font-extrabold sm:text-4xl">Renewed Sale: save more on phones</h2>
+        <p class="mt-3 text-white/85">Apply <strong class="rounded bg-white/15 px-2 py-0.5">RENEW10</strong> at checkout for demo purposes. Every phone lists battery health, grade and warranty.</p>
+        <div class="mt-6 flex gap-3" role="timer" aria-label="Deal countdown">
+          <div class="min-w-20 rounded-2xl bg-white/10 p-3 text-center"><p id="cd-h" class="text-2xl font-extrabold tabular-nums">23</p><p class="text-xs text-white/70">Hours</p></div>
+          <div class="min-w-20 rounded-2xl bg-white/10 p-3 text-center"><p id="cd-m" class="text-2xl font-extrabold tabular-nums">59</p><p class="text-xs text-white/70">Mins</p></div>
+          <div class="min-w-20 rounded-2xl bg-white/10 p-3 text-center"><p id="cd-s" class="text-2xl font-extrabold tabular-nums">59</p><p class="text-xs text-white/70">Secs</p></div>
+        </div>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href="products.html?category=phones" class="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-bold text-brand-800 hover:bg-sage-100">Shop phone deals</a>
+          <a href="warranty-quality.html" class="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/40 px-6 py-3 text-sm font-bold text-white hover:bg-white/10">How grading works</a>
+        </div>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2" data-reveal>
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-6"><p class="text-sm text-sage-200">Devices rehomed</p><p class="mt-1 text-4xl font-extrabold"><span data-count="1250">0</span>+</p></div>
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-6"><p class="text-sm text-sage-200">E-waste diverted</p><p class="mt-1 text-4xl font-extrabold"><span data-count="2.8">0</span> t</p></div>
+        <div class="rounded-2xl border border-white/15 bg-white/5 p-6 sm:col-span-2"><p class="text-sm text-sage-200">What you get</p><p class="mt-2 text-sm leading-relaxed text-white/85">✓ 52-point inspection · ✓ Data-wiped & reset · ✓ Grade + battery on every listing · ✓ Warranty card in box</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GRADES + STEPS ============ -->
+  <section class="bg-white py-14 sm:py-20" aria-labelledby="grade-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-2 lg:gap-14">
+        <div data-reveal>
+          <h2 id="grade-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl">Know exactly what you're buying</h2>
+          <p class="mt-3 text-slate-600">No surprises. The grade on the page is the grade in the box.</p>
+          <div class="mt-6 grid gap-3 sm:grid-cols-2">
+            <div class="rounded-2xl border border-sage-200 bg-sage-50 p-5"><p class="flex items-center gap-2 font-bold"><span class="h-2.5 w-2.5 rounded-full bg-brand-600"></span>Excellent</p><p class="mt-1 text-sm text-slate-600">Like-new, minimal signs of use.</p></div>
+            <div class="rounded-2xl border border-sage-200 bg-sage-50 p-5"><p class="flex items-center gap-2 font-bold"><span class="h-2.5 w-2.5 rounded-full bg-teal-500"></span>Very Good</p><p class="mt-1 text-sm text-slate-600">Light marks, 100% functional.</p></div>
+            <div class="rounded-2xl border border-sage-200 bg-sage-50 p-5"><p class="flex items-center gap-2 font-bold"><span class="h-2.5 w-2.5 rounded-full bg-accent-500"></span>Good</p><p class="mt-1 text-sm text-slate-600">Visible wear, great value.</p></div>
+            <div class="rounded-2xl border border-sage-200 bg-sage-50 p-5"><p class="flex items-center gap-2 font-bold"><span class="h-2.5 w-2.5 rounded-full bg-slate-400"></span>Fair</p><p class="mt-1 text-sm text-slate-600">Budget pick, fully tested.</p></div>
+          </div>
+        </div>
+        <div data-reveal>
+          <h3 class="text-xl font-extrabold">How refurbishment works</h3>
+          <ol class="mt-4 space-y-4">
+            <li class="flex gap-4 rounded-2xl border border-sage-200 p-5 shadow-card"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-700 font-extrabold text-white">1</span><div><p class="font-bold">We inspect & test</p><p class="text-sm text-slate-600">Display, battery, ports, cameras, speakers and storage — 52 checks.</p></div></li>
+            <li class="flex gap-4 rounded-2xl border border-sage-200 p-5 shadow-card"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-700 font-extrabold text-white">2</span><div><p class="font-bold">We renew & grade</p><p class="text-sm text-slate-600">Cleaned, parts replaced if needed, data-wiped, then graded.</p></div></li>
+            <li class="flex gap-4 rounded-2xl border border-sage-200 p-5 shadow-card"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-accent-500 font-extrabold text-white">3</span><div><p class="font-bold">You buy with confidence</p><p class="text-sm text-slate-600">Warranty card, accessories listed, 30-day demo returns.</p></div></li>
+          </ol>
+          <a href="warranty-quality.html" class="mt-5 inline-flex font-bold text-brand-700 underline underline-offset-4">See full process →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CTA -->
+  <section class="bg-sage-100 py-14 sm:py-20" aria-labelledby="cta2-title">
+    <div class="mx-auto max-w-4xl px-4 text-center sm:px-6" data-reveal>
+      <h2 id="cta2-title" class="text-3xl font-extrabold sm:text-4xl">Not feeling this layout? Try Home 1.</h2>
+      <p class="mx-auto mt-3 max-w-2xl text-slate-600">Both homepages share cart, search and products. Pick the style you prefer.</p>
+      <div class="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
+        <a href="index.html" class="inline-flex min-h-12 items-center justify-center rounded-xl border-2 border-brand-700 bg-white px-6 py-3 font-bold text-brand-700">← Go to Home 1</a>
+        <a href="products.html" class="inline-flex min-h-12 items-center justify-center rounded-xl bg-brand-700 px-6 py-3 font-bold text-white hover:bg-brand-800">Shop products</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="./js/data.js" defer></script>
+<script src="./js/navbar.js" defer></script>
+<script src="./js/footer.js" defer></script>
+<script src="./js/main.js" defer></script>
+<script>
+  // Simple deal countdown to midnight, demo only
+  (function () {
+    function tick() {
+      var now = new Date();
+      var end = new Date(); end.setHours(23, 59, 59, 999);
+      var d = Math.max(0, end - now);
+      var h = Math.floor(d / 36e5), m = Math.floor(d % 36e5 / 6e4), s = Math.floor(d % 6e4 / 1e3);
+      var pad = function (n) { return String(n).padStart(2, '0'); };
+      var big = document.getElementById('deal-countdown');
+      if (big) big.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+      var hh = document.getElementById('cd-h'), mm = document.getElementById('cd-m'), ss = document.getElementById('cd-s');
+      if (hh) hh.textContent = pad(h); if (mm) mm.textContent = pad(m); if (ss) ss.textContent = pad(s);
+    }
+    tick(); setInterval(tick, 1000);
+  })();
+</script>
+</body>
+</html>
+
+

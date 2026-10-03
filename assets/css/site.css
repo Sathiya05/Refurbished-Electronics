@@ -1,0 +1,120 @@
+/* =============================================================
+   ReTech — site.css
+   Small set of global styles that sit alongside Tailwind:
+   smooth scrolling, reveal animations, focus polish and the
+   sticky-header shadow state toggled by navbar.js.
+   ============================================================= */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: clip;
+}
+
+/* The `hidden` attribute must always win, even against Tailwind
+   display utilities (e.g. `.flex` on the mobile filter drawer or
+   cart panel). Without this, an invisible full-screen fixed layer
+   stays on top of the navbar and swallows every click. */
+[hidden] {
+  display: none !important;
+}
+
+/* Offset in-page targets so the sticky navbar never covers them */
+section[id],
+div[id],
+footer[id] {
+  scroll-margin-top: 6rem;
+}
+
+/* Category pills: deterministic selected state driven by
+   aria-pressed (which products.js already toggles), so the active
+   pill is always white text on brand green — even if a
+   runtime-generated Tailwind utility is missing. */
+[data-category-pill][aria-pressed="true"] {
+  background-color: #166534;
+  border-color: #166534;
+  color: #ffffff;
+}
+
+[data-category-pill][aria-pressed="true"]:hover {
+  background-color: #14532d;
+  border-color: #14532d;
+  color: #ffffff;
+}
+
+/* Header shadow when the page is scrolled (state set in navbar.js) */
+[data-navbar].is-scrolled {
+  box-shadow: 0 14px 34px -26px rgba(17, 24, 39, 0.7);
+}
+
+/* Reveal on scroll */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Product / card image surfaces stay crisp on HiDPI screens */
+img {
+  -webkit-user-drag: none;
+}
+
+/* Native select arrow consistency */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23166534' stroke-width='1.8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.1rem;
+}
+
+select[multiple] {
+  background-image: none;
+}
+
+/* Range inputs (price sliders) themed to the brand */
+input[type="range"] {
+  accent-color: #166534;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #166534;
+}
+
+/* Consistent focus ring for keyboard users on links inside rich text */
+main a:focus-visible {
+  outline: 2px solid #166534;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

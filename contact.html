@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact ReTech | Refurbished Electronics Enquiries</title>
+<meta name="description" content="Send an enquiry to ReTech about a refurbished product, warranty question, trade-in or order support. Includes business hours, contact details and quick answers.">
+<meta name="theme-color" content="#166534">
+<link rel="canonical" href="https://www.retech.example/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact ReTech | Refurbished Electronics Enquiries">
+<meta property="og:description" content="Product questions, warranty questions, trade-in help and order support.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23166534'/%3E%3Cpath d='M16 7a9 9 0 1 0 8.5 12' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M21 4h4.5v4.5' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/site.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { 50:'#F2F7F3',100:'#E7F0E5',200:'#D5E4D2',300:'#B9D2B5',400:'#8FBC8C',500:'#5E9A5F',600:'#2F7A45',700:'#166534',800:'#14532D',900:'#0F3A21',DEFAULT:'#166534' },
+          sage:  { 50:'#F4F8F3',100:'#E7F0E5',200:'#D5E4D2',300:'#B9D2B5',400:'#8FBC8C',500:'#5E9A5F',DEFAULT:'#E7F0E5' },
+          ink: '#111827',
+          accent: { 50:'#FFFBEB',100:'#FEF3C7',200:'#FDE68A',300:'#FCD34D',400:'#FBBF24',500:'#F59E0B',600:'#D97706',700:'#B45309',DEFAULT:'#F59E0B' }
+        },
+        fontFamily: { sans: ['"Plus Jakarta Sans"','ui-sans-serif','system-ui','Segoe UI','sans-serif'] },
+        boxShadow: {
+          card: '0 1px 2px rgba(17,24,39,.04), 0 14px 34px -22px rgba(17,24,39,.30)',
+          'card-hover': '0 2px 8px rgba(17,24,39,.06), 0 26px 50px -26px rgba(17,24,39,.38)'
+        },
+        borderRadius: { '4xl': '2rem' },
+        keyframes: {
+          floaty: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } }
+        },
+        animation: { floaty: 'floaty 7s ease-in-out infinite' }
+      }
+    }
+  };
+</script>
+</head>
+<body class="bg-sage-50 font-sans text-ink antialiased">
+
+<div id="navbar"></div>
+
+<main id="main">
+
+  <!-- ========================= PAGE HEADER ========================= -->
+  <section class="relative flex min-h-[95vh] flex-col justify-center overflow-hidden bg-brand-900 text-white" aria-labelledby="contact-title">
+    <img src="./assets/images/hero-desk.jpg" width="1400" height="900" alt="" aria-hidden="true" class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20">
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-brand-900 via-brand-900/85 to-brand-800/60" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand-500/30 blur-3xl" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-accent-500/20 blur-3xl" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-3xl px-4 py-8 text-center sm:px-6 sm:py-12">
+      <nav aria-label="Breadcrumb" class="flex justify-center text-xs font-semibold text-white/70">
+        <ol class="inline-flex flex-wrap items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 backdrop-blur">
+          <li><a href="index.html" class="transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Home</a></li>
+          <li aria-hidden="true" class="text-white/40">/</li>
+          <li class="text-white" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+      <p class="mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-sage-200">
+        <span class="h-2 w-2 rounded-full bg-accent-400" aria-hidden="true"></span>
+        We're Here to Help
+      </p>
+      <h1 id="contact-title" class="mt-4 text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Have a Question? <span class="text-accent-300">Just Ask.</span></h1>
+      <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">Ask about a listing, a warranty claim, a trade-in or an order. We reply during business hours.</p>
+      <dl class="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-4">
+        <div class="flex items-center gap-3">
+          <dt class="sr-only">Response time</dt>
+          <dd class="text-2xl font-extrabold sm:text-3xl">24h</dd>
+          <dd class="text-xs font-semibold uppercase tracking-wide text-white/60">Response<br>time</dd>
+        </div>
+        <div class="hidden w-px bg-white/15 sm:block" aria-hidden="true"></div>
+        <div class="flex items-center gap-3">
+          <dt class="sr-only">Support days</dt>
+          <dd class="text-2xl font-extrabold sm:text-3xl">6-day</dd>
+          <dd class="text-xs font-semibold uppercase tracking-wide text-white/60">Support<br>week</dd>
+        </div>
+        <div class="hidden w-px bg-white/15 sm:block" aria-hidden="true"></div>
+        <div class="flex items-center gap-3">
+          <dt class="sr-only">Channels</dt>
+          <dd class="text-2xl font-extrabold sm:text-3xl">3</dd>
+          <dd class="text-xs font-semibold uppercase tracking-wide text-white/60">Ways to<br>reach us</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================== FORM + DETAILS ===================== -->
+  <section class="py-12 sm:py-16" aria-label="Contact form and details">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-10 lg:px-8">
+
+      <div>
+        <!-- SUCCESS -->
+        <div data-contact-success hidden class="rounded-2xl border border-brand-700/30 bg-white p-6 shadow-card sm:p-8">
+          <span class="inline-flex items-center gap-2 rounded-full bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-800">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            Enquiry captured
+          </span>
+          <h2 class="mt-4 text-2xl font-extrabold text-ink">Thanks, <span data-success-name>there</span>.</h2>
+          <p class="mt-3 text-sm leading-relaxed text-slate-600">
+            Your <strong class="text-ink" data-success-type>General enquiry</strong> has been recorded in this browser with reference
+            <strong class="text-ink" data-success-reference>ENQ-0000</strong>.
+          </p>
+          <dl class="mt-4 grid gap-3 text-sm sm:grid-cols-2">
+            <div class="rounded-xl bg-sage-50 p-4">
+              <dt class="text-xs font-bold uppercase tracking-wide text-brand-800">Product / Device</dt>
+              <dd class="mt-1 font-medium text-ink" data-success-device>Not specified</dd>
+            </div>
+            <div class="rounded-xl bg-sage-50 p-4">
+              <dt class="text-xs font-bold uppercase tracking-wide text-brand-800">Next step</dt>
+              <dd class="mt-1 font-medium text-ink">A team member responds during business hours.</dd>
+            </div>
+          </dl>
+          <p class="mt-4 rounded-xl bg-accent-100 p-4 text-xs leading-relaxed text-accent-700">
+            Demonstration behaviour: this form runs entirely in your browser. No message is transmitted and no ticket is created.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <button type="button" data-contact-reset class="inline-flex min-h-11 items-center rounded-xl bg-brand-700 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">Send another enquiry</button>
+            <a href="products.html" class="inline-flex min-h-11 items-center rounded-xl border border-brand-700 px-5 py-2.5 text-sm font-bold text-brand-700 transition-colors hover:bg-sage-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">Back to products</a>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <form data-contact-form novalidate class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card sm:p-8">
+          <h2 class="text-xl font-extrabold text-ink sm:text-2xl">Send an enquiry</h2>
+          <p class="mt-2 text-sm text-slate-600">Fields marked with <span aria-hidden="true">*</span><span class="sr-only">an asterisk</span> are required.</p>
+
+          <div class="mt-6 grid gap-5 sm:grid-cols-2">
+            <div data-field>
+              <label for="contact-name" class="block text-sm font-bold text-ink">Full name <span aria-hidden="true">*</span></label>
+              <input id="contact-name" name="name" data-label="Full name" type="text" required minlength="2" autocomplete="name" placeholder="Your name"
+                class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+              <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+            </div>
+
+            <div data-field>
+              <label for="contact-email" class="block text-sm font-bold text-ink">Email <span aria-hidden="true">*</span></label>
+              <input id="contact-email" name="email" data-label="Email" type="email" required autocomplete="email" placeholder="you@example.com"
+                class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+              <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+            </div>
+
+            <div data-field>
+              <label for="contact-phone" class="block text-sm font-bold text-ink">Phone</label>
+              <input id="contact-phone" name="phone" data-label="Phone" type="tel" autocomplete="tel" placeholder="+91 90000 00000"
+                class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+              <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+            </div>
+
+            <div data-field>
+              <label for="contact-type" class="block text-sm font-bold text-ink">Enquiry type <span aria-hidden="true">*</span></label>
+              <select id="contact-type" name="enquiryType" data-label="Enquiry type" required
+                class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white pl-4 pr-10 text-sm text-ink focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+                <option value="">Choose a topic</option>
+                <option value="Product Question">Product Question</option>
+                <option value="Warranty Question">Warranty Question</option>
+                <option value="Sell My Device">Sell My Device</option>
+                <option value="Order Support">Order Support</option>
+                <option value="General Enquiry">General Enquiry</option>
+              </select>
+              <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+            </div>
+
+            <div data-field class="sm:col-span-2">
+              <label for="contact-device" class="block text-sm font-bold text-ink">Product / Device</label>
+              <input id="contact-device" name="device" type="text" placeholder="e.g. Refurbished iPhone 13 (listing reference optional)"
+                class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+              <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+            </div>
+
+            <div data-field class="sm:col-span-2">
+              <label for="contact-message" class="block text-sm font-bold text-ink">Message <span aria-hidden="true">*</span></label>
+              <textarea id="contact-message" name="message" data-label="Message" rows="5" required minlength="10" placeholder="Tell us what you need help with…"
+                class="mt-2 w-full rounded-xl border border-sage-200 bg-white px-4 py-3 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25"></textarea>
+              <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <button type="submit" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand-700 px-6 py-3 text-sm font-bold text-white shadow-sm transition-colors hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">
+              Send Enquiry
+            </button>
+            <p class="text-xs text-slate-500">Frontend demo — no data leaves your device.</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- CONTACT DETAILS -->
+      <aside class="space-y-5" aria-label="Contact details">
+        <div class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card">
+          <h2 class="text-lg font-extrabold text-ink">Reach us</h2>
+          <ul class="mt-4 space-y-4 text-sm">
+            <li class="flex gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sage-100 text-brand-700" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+              </span>
+              <span>
+                <span class="block text-xs font-bold uppercase tracking-wide text-slate-500">Email</span>
+                <a href="mailto:hello@retech.example" class="font-semibold text-brand-700 underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">hello@retech.example</a>
+              </span>
+            </li>
+            <li class="flex gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sage-100 text-brand-700" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              </span>
+              <span>
+                <span class="block text-xs font-bold uppercase tracking-wide text-slate-500">Phone</span>
+                <a href="tel:+919000000000" class="font-semibold text-brand-700 underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">+91 90000 00000</a>
+              </span>
+            </li>
+            <li class="flex gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sage-100 text-brand-700" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </span>
+              <span>
+                <span class="block text-xs font-bold uppercase tracking-wide text-slate-500">Business hours</span>
+                <span class="font-semibold text-ink">Monday to Saturday, 10:00 – 19:00 IST</span>
+              </span>
+            </li>
+            <li class="flex gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sage-100 text-brand-700" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+              </span>
+              <span>
+                <span class="block text-xs font-bold uppercase tracking-wide text-slate-500">Location</span>
+                <span class="font-semibold text-ink">Demo address — replace with your registered business location</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card">
+          <h2 class="text-lg font-extrabold text-ink">Quick answers</h2>
+          <p class="mt-2 text-sm text-slate-600">Most questions are answered on the FAQ section of the homepage.</p>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li>
+              <a href="index.html#faq" class="font-semibold text-brand-700 underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">What does refurbished mean?</a>
+            </li>
+            <li>
+              <a href="index.html#faq" class="font-semibold text-brand-700 underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">How are devices tested?</a>
+            </li>
+            <li>
+              <a href="index.html#faq" class="font-semibold text-brand-700 underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">Does every product come with a warranty?</a>
+            </li>
+            <li>
+              <a href="warranty-quality.html" class="font-semibold text-brand-700 underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">Condition grades explained</a>
+            </li>
+          </ul>
+          <a href="index.html#faq" class="mt-5 inline-flex min-h-11 items-center rounded-xl bg-sage-100 px-5 py-2.5 text-sm font-bold text-brand-800 transition-colors hover:bg-sage-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">Open the FAQ</a>
+        </div>
+
+        <div class="rounded-2xl border border-brand-700/30 bg-brand-800 p-6 text-white">
+          <h2 class="text-lg font-extrabold">Selling a device?</h2>
+          <p class="mt-2 text-sm text-white/85">Use the six-step valuation form for an indicative trade-in range.</p>
+          <a href="sell-device.html" class="mt-4 inline-flex min-h-11 items-center rounded-xl bg-white px-5 py-2.5 text-sm font-bold text-brand-800 transition-colors hover:bg-sage-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Sell Your Device</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <!-- ====================== MAP ====================== -->
+  <section class="bg-white py-14 sm:py-20" aria-labelledby="map-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center" data-reveal>
+        <p class="inline-flex items-center gap-2 rounded-full bg-sage-100 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-800">Find Us</p>
+        <h2 id="map-title" class="mt-4 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Visit the ReTech bench</h2>
+        <p class="mt-3 text-base text-slate-600">Drop off a trade-in or see graded devices in person during business hours.</p>
+      </div>
+      <div class="mt-8 grid items-stretch gap-6 lg:grid-cols-3" data-reveal>
+        <div class="overflow-hidden rounded-4xl border border-sage-200 shadow-card lg:col-span-2">
+          <iframe title="ReTech store location map" src="https://www.google.com/maps?q=Bengaluru,Karnataka,India&z=12&output=embed" width="100%" height="100%" class="min-h-80 w-full sm:min-h-96" style="border:0;min-height:320px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="flex flex-col justify-center rounded-4xl bg-brand-800 p-6 text-white sm:p-8">
+          <h3 class="text-xl font-extrabold">Store address</h3>
+          <p class="mt-3 text-sm leading-relaxed text-white/85">Demo address — replace with your registered business location before launch.</p>
+          <ul class="mt-5 space-y-2 text-sm text-white/85">
+            <li><strong class="text-white">Hours:</strong> Mon–Sat, 10:00 – 19:00 IST</li>
+            <li><strong class="text-white">Phone:</strong> +91 90000 00000</li>
+            <li><strong class="text-white">Email:</strong> hello@retech.example</li>
+          </ul>
+          <a href="https://www.google.com/maps?q=Bengaluru,Karnataka,India" target="_blank" rel="noopener" class="mt-6 inline-flex min-h-11 items-center justify-center rounded-xl bg-white px-5 py-2.5 text-sm font-bold text-brand-800 transition hover:bg-sage-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="bg-sage-50 py-14 sm:py-20" aria-labelledby="faq-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-12 lg:gap-12">
+        <div class="lg:col-span-4" data-reveal>
+          <p class="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-800">FAQ</p>
+          <h2 id="faq-title" class="mt-4 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Frequently Asked Questions</h2>
+          <p class="mt-3 text-sm text-slate-600">Straight answers about refurbished grading, testing, warranty and returns.</p>
+          <a href="contact.html" class="mt-6 inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-700 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">
+            Still have a question?
+          </a>
+        </div>
+
+        <div class="lg:col-span-8" data-reveal>
+          <div class="divide-y divide-sage-200 overflow-hidden rounded-2xl border border-sage-200 bg-white">
+            <div>
+              <h3>
+                <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-1" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-bold text-ink transition-colors hover:bg-sage-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-700 sm:px-6 sm:text-base">
+                  What does refurbished mean?
+                  <span data-accordion-chevron class="shrink-0 transition-transform duration-300" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                  </span>
+                </button>
+              </h3>
+              <div id="faq-1" data-accordion-panel hidden class="px-5 pb-5 text-sm leading-relaxed text-slate-600 sm:px-6">
+                A refurbished device has been previously owned, inspected, tested and graded by our team. It is sold with the condition grade, included accessories and warranty duration listed on the product page. “Refurbished” does not mean new — the selected grade tells you exactly what to expect cosmetically.
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-2" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-bold text-ink transition-colors hover:bg-sage-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-700 sm:px-6 sm:text-base">
+                  How are devices tested?
+                  <span data-accordion-chevron class="shrink-0 transition-transform duration-300" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                  </span>
+                </button>
+              </h3>
+              <div id="faq-2" data-accordion-panel hidden class="px-5 pb-5 text-sm leading-relaxed text-slate-600 sm:px-6">
+                Every device goes through a checklist covering display, battery health, keyboard, ports, cameras, speakers, connectivity, storage and charging. Devices that fail any check are sent for further work or recycled instead of being sold.
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-3" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-bold text-ink transition-colors hover:bg-sage-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-700 sm:px-6 sm:text-base">
+                  What condition grades do you offer?
+                  <span data-accordion-chevron class="shrink-0 transition-transform duration-300" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                  </span>
+                </button>
+              </h3>
+              <div id="faq-3" data-accordion-panel hidden class="px-5 pb-5 text-sm leading-relaxed text-slate-600 sm:px-6">
+                We use four grades: Excellent, Very Good, Good and Fair. Each product page states the grade of the exact unit being sold, so you can compare like for like.
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-4" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-bold text-ink transition-colors hover:bg-sage-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-700 sm:px-6 sm:text-base">
+                  Does every product come with a warranty?
+                  <span data-accordion-chevron class="shrink-0 transition-transform duration-300" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                  </span>
+                </button>
+              </h3>
+              <div id="faq-4" data-accordion-panel hidden class="px-5 pb-5 text-sm leading-relaxed text-slate-600 sm:px-6">
+                Warranty duration is listed per product because it varies by device and grade — you will see the period (for example 3 or 6 months) on each product page. It covers functional faults identified after delivery and does not cover physical or liquid damage.
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-5" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-bold text-ink transition-colors hover:bg-sage-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-700 sm:px-6 sm:text-base">
+                  Can I return a refurbished product?
+                  <span data-accordion-chevron class="shrink-0 transition-transform duration-300" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                  </span>
+                </button>
+              </h3>
+              <div id="faq-5" data-accordion-panel hidden class="px-5 pb-5 text-sm leading-relaxed text-slate-600 sm:px-6">
+                Our demo policy allows a 30-day return window on eligible devices provided the device is returned in the same condition with the accessories supplied. Final terms are confirmed by the business before launch.
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-6" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-bold text-ink transition-colors hover:bg-sage-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-700 sm:px-6 sm:text-base">
+                  How can I sell my old device?
+                  <span data-accordion-chevron class="shrink-0 transition-transform duration-300" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                  </span>
+                </button>
+              </h3>
+              <div id="faq-6" data-accordion-panel hidden class="px-5 pb-5 text-sm leading-relaxed text-slate-600 sm:px-6">
+                Use the <a href="sell-device.html" class="font-semibold text-brand-700 underline underline-offset-2">Sell Your Device</a> page. You tell us the device type, brand, model and condition, submit your contact details and receive an estimated value. The estimate is indicative only and becomes a firm offer after physical inspection.
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                <button type="button" data-accordion-trigger aria-expanded="false" aria-controls="faq-7" class="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-sm font-bold text-ink transition-colors hover:bg-sage-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-700 sm:px-6 sm:text-base">
+                  Do you erase personal data from devices?
+                  <span data-accordion-chevron class="shrink-0 transition-transform duration-300" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                  </span>
+                </button>
+              </h3>
+              <div id="faq-7" data-accordion-panel hidden class="px-5 pb-5 text-sm leading-relaxed text-slate-600 sm:px-6">
+                Yes. Every device is factory reset and data wiped as part of the refurbishment process before it is graded or dispatched, so previous owners do not need to hand over devices with personal data still on them.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CTA ====================== -->
+  <section class="bg-sage-100 py-14 sm:py-20" aria-labelledby="contact-cta-title">
+    <div class="mx-auto max-w-4xl px-4 text-center sm:px-6" data-reveal>
+      <h2 id="contact-cta-title" class="text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Prefer to browse first?</h2>
+      <p class="mx-auto mt-3 max-w-2xl text-base text-slate-600">Every listing shows its grade, battery health, warranty and original price — no need to ask.</p>
+      <div class="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
+        <a href="products.html" class="inline-flex min-h-12 items-center justify-center rounded-xl bg-brand-700 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 sm:text-base">Shop products</a>
+        <a href="sell-device.html" class="inline-flex min-h-12 items-center justify-center rounded-xl border-2 border-brand-700 bg-white px-6 py-3 text-sm font-bold text-brand-700 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 sm:text-base">Sell your device</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="./js/data.js" defer></script>
+<script src="./js/navbar.js" defer></script>
+<script src="./js/footer.js" defer></script>
+<script src="./js/main.js" defer></script>
+<script src="./js/contact.js" defer></script>
+</body>
+</html>
+
+

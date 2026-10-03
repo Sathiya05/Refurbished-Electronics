@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sell Your Old Device | ReTech</title>
+<meta name="description" content="Tell us about your old phone, laptop or tablet and get an indicative trade-in value from ReTech. Six quick steps, no obligation, with a clearly labelled demo estimate.">
+<meta name="theme-color" content="#166534">
+<link rel="canonical" href="https://www.retech.example/sell-device.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sell Your Old Device | ReTech">
+<meta property="og:description" content="Get an indicative value for your unused phone, laptop or tablet and give it a second life.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23166534'/%3E%3Cpath d='M16 7a9 9 0 1 0 8.5 12' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M21 4h4.5v4.5' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/site.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { 50:'#F2F7F3',100:'#E7F0E5',200:'#D5E4D2',300:'#B9D2B5',400:'#8FBC8C',500:'#5E9A5F',600:'#2F7A45',700:'#166534',800:'#14532D',900:'#0F3A21',DEFAULT:'#166534' },
+          sage:  { 50:'#F4F8F3',100:'#E7F0E5',200:'#D5E4D2',300:'#B9D2B5',400:'#8FBC8C',500:'#5E9A5F',DEFAULT:'#E7F0E5' },
+          ink: '#111827',
+          accent: { 50:'#FFFBEB',100:'#FEF3C7',200:'#FDE68A',300:'#FCD34D',400:'#FBBF24',500:'#F59E0B',600:'#D97706',700:'#B45309',DEFAULT:'#F59E0B' }
+        },
+        fontFamily: { sans: ['"Plus Jakarta Sans"','ui-sans-serif','system-ui','Segoe UI','sans-serif'] },
+        boxShadow: {
+          card: '0 1px 2px rgba(17,24,39,.04), 0 14px 34px -22px rgba(17,24,39,.30)',
+          'card-hover': '0 2px 8px rgba(17,24,39,.06), 0 26px 50px -26px rgba(17,24,39,.38)'
+        },
+        borderRadius: { '4xl': '2rem' },
+        keyframes: {
+          floaty: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-10px)' } }
+        },
+        animation: { floaty: 'floaty 7s ease-in-out infinite' }
+      }
+    }
+  };
+</script>
+</head>
+<body class="bg-sage-50 font-sans text-ink antialiased">
+
+<div id="navbar"></div>
+
+<main id="main">
+
+  <!-- ========================= PAGE HEADER ========================= -->
+  <section class="relative flex min-h-[95vh] flex-col justify-center overflow-hidden bg-brand-900 text-white" aria-labelledby="sell-page-title">
+    <img src="./assets/images/sell-device.jpg" width="1400" height="900" alt="" aria-hidden="true" class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20">
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-900 via-brand-900/85 to-brand-800/40" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand-500/30 blur-3xl" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-accent-500/20 blur-3xl" aria-hidden="true"></div>
+    <div class="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-8 sm:px-6 sm:py-12 lg:grid-cols-2 lg:gap-14 lg:px-8">
+      <div data-reveal>
+        <nav aria-label="Breadcrumb" class="text-xs font-semibold text-white/70">
+          <ol class="inline-flex flex-wrap items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 backdrop-blur">
+            <li><a href="index.html" class="transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Home</a></li>
+            <li aria-hidden="true" class="text-white/40">/</li>
+            <li class="text-white" aria-current="page">Sell Your Device</li>
+          </ol>
+        </nav>
+        <p class="mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-sage-200">
+          <span class="h-2 w-2 rounded-full bg-accent-400" aria-hidden="true"></span>
+          Trade In
+        </p>
+        <h1 id="sell-page-title" class="mt-4 text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Sell Your Old Device, <span class="text-accent-300">Fund Your Next One.</span></h1>
+        <p class="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">Give your unused technology a second life and receive an estimated value in about two minutes.</p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="#sell-form" class="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-7 py-3 text-sm font-bold text-brand-800 shadow-sm transition hover:bg-sage-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:text-base">Get an estimate</a>
+          <a href="products.html" class="inline-flex min-h-12 items-center justify-center rounded-xl border-2 border-white/50 px-7 py-3 text-sm font-bold text-white transition hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:text-base">Shop refurbished</a>
+        </div>
+        <dl class="mt-8 flex flex-wrap gap-x-10 gap-y-4">
+          <div class="flex items-center gap-3">
+            <dt class="sr-only">Estimate time</dt>
+            <dd class="text-2xl font-extrabold sm:text-3xl">2-min</dd>
+            <dd class="text-xs font-semibold uppercase tracking-wide text-white/60">Online<br>estimate</dd>
+          </div>
+          <div class="hidden w-px bg-white/15 sm:block" aria-hidden="true"></div>
+          <div class="flex items-center gap-3">
+            <dt class="sr-only">Pickup</dt>
+            <dd class="text-2xl font-extrabold sm:text-3xl">Free</dd>
+            <dd class="text-xs font-semibold uppercase tracking-wide text-white/60">Doorstep<br>pickup</dd>
+          </div>
+          <div class="hidden w-px bg-white/15 sm:block" aria-hidden="true"></div>
+       
+        </dl>
+      </div>
+      <div class="relative" data-reveal>
+        <div class="overflow-hidden rounded-4xl border border-white/20 shadow-card">
+          <img src="assets\images\img1.avif" width="900" height="700" alt="Person packing a used laptop into a ReTech shipping box" class="h-full w-full object-cover">
+        </div>
+        <div class="absolute -bottom-5 left-4 rounded-2xl border border-sage-200 bg-white px-4 py-3 shadow-card sm:left-8">
+          <p class="text-xs font-bold uppercase tracking-wide text-brand-700">Trade-in promise</p>
+          <p class="text-sm font-extrabold text-ink">Indicative estimate, zero pressure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FORM + INFO ====================== -->
+  <section class="bg-sage-50 py-12 sm:py-16" aria-label="Device valuation form">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-10 lg:px-8">
+
+      <!-- FORM -->
+      <div>
+        <!-- Progress -->
+        <nav aria-label="Form progress" class="rounded-2xl border border-sage-200 bg-white p-5 shadow-card">
+          <ol class="flex items-center justify-between gap-1 sm:gap-2">
+            <li data-progress-step="1" class="grid h-9 w-9 place-items-center rounded-xl border border-sage-200 bg-white text-sm font-bold text-slate-500 transition-colors"><span data-progress-dot class="grid h-9 w-9 place-items-center rounded-xl bg-sage-100 text-slate-500">1<span class="sr-only"> — Device type</span></span></li>
+            <li data-progress-step="2" class="grid h-9 w-9 place-items-center rounded-xl border border-sage-200 bg-white text-sm font-bold text-slate-500 transition-colors"><span data-progress-dot class="grid h-9 w-9 place-items-center rounded-xl bg-sage-100 text-slate-500">2<span class="sr-only"> — Brand</span></span></li>
+            <li data-progress-step="3" class="grid h-9 w-9 place-items-center rounded-xl border border-sage-200 bg-white text-sm font-bold text-slate-500 transition-colors"><span data-progress-dot class="grid h-9 w-9 place-items-center rounded-xl bg-sage-100 text-slate-500">3<span class="sr-only"> — Model</span></span></li>
+            <li data-progress-step="4" class="grid h-9 w-9 place-items-center rounded-xl border border-sage-200 bg-white text-sm font-bold text-slate-500 transition-colors"><span data-progress-dot class="grid h-9 w-9 place-items-center rounded-xl bg-sage-100 text-slate-500">4<span class="sr-only"> — Condition</span></span></li>
+            <li data-progress-step="5" class="grid h-9 w-9 place-items-center rounded-xl border border-sage-200 bg-white text-sm font-bold text-slate-500 transition-colors"><span data-progress-dot class="grid h-9 w-9 place-items-center rounded-xl bg-sage-100 text-slate-500">5<span class="sr-only"> — Details</span></span></li>
+            <li data-progress-step="6" class="grid h-9 w-9 place-items-center rounded-xl border border-sage-200 bg-white text-sm font-bold text-slate-500 transition-colors"><span data-progress-dot class="grid h-9 w-9 place-items-center rounded-xl bg-sage-100 text-slate-500">6<span class="sr-only"> — Contact</span></span></li>
+          </ol>
+          <div class="mt-4 h-1.5 w-full overflow-hidden rounded-full bg-sage-200">
+            <div data-progress-bar class="h-full rounded-full bg-brand-700 transition-all duration-500" style="width:16.67%"></div>
+          </div>
+          <p data-progress-text class="mt-3 text-xs font-semibold text-slate-500" aria-live="polite">Step 1 of 6</p>
+        </nav>
+
+        <form id="sell-form" data-sell-form class="mt-6 scroll-mt-28 space-y-5" novalidate>
+
+          <!-- STEP 1 -->
+          <section data-step="1" class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card sm:p-8" aria-labelledby="step-1-title">
+            <h2 id="step-1-title" class="text-xl font-extrabold text-ink sm:text-2xl">Step 1 — Device Type</h2>
+            <p class="mt-2 text-sm text-slate-600">What are you selling?</p>
+            <fieldset data-radio-group="deviceType" class="mt-6">
+              <legend class="text-sm font-bold text-ink">Choose a device type</legend>
+              <div class="mt-3 grid gap-3 sm:grid-cols-3">
+                <label for="type-phone" class="flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border border-sage-200 bg-white px-4 py-3 text-sm font-bold text-ink transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50 has-[:checked]:text-brand-800">
+                  <input id="type-phone" type="radio" name="deviceType" value="Phone" class="h-4 w-4">Phone
+                </label>
+                <label for="type-laptop" class="flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border border-sage-200 bg-white px-4 py-3 text-sm font-bold text-ink transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50 has-[:checked]:text-brand-800">
+                  <input id="type-laptop" type="radio" name="deviceType" value="Laptop" class="h-4 w-4">Laptop
+                </label>
+                <label for="type-tablet" class="flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border border-sage-200 bg-white px-4 py-3 text-sm font-bold text-ink transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50 has-[:checked]:text-brand-800">
+                  <input id="type-tablet" type="radio" name="deviceType" value="Tablet" class="h-4 w-4">Tablet
+                </label>
+              </div>
+              <p data-error hidden class="mt-2 text-xs font-semibold text-red-600"></p>
+            </fieldset>
+          </section>
+
+          <!-- STEP 2 -->
+          <section data-step="2" class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card sm:p-8" aria-labelledby="step-2-title" hidden>
+            <h2 id="step-2-title" class="text-xl font-extrabold text-ink sm:text-2xl">Step 2 — Brand</h2>
+            <p class="mt-2 text-sm text-slate-600">Who made the device?</p>
+            <fieldset data-radio-group="brand" class="mt-6">
+              <legend class="text-sm font-bold text-ink">Select the brand</legend>
+              <div data-brand-options class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"></div>
+              <p data-error hidden class="mt-2 text-xs font-semibold text-red-600"></p>
+            </fieldset>
+          </section>
+
+          <!-- STEP 3 -->
+          <section data-step="3" class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card sm:p-8" aria-labelledby="step-3-title" hidden>
+            <h2 id="step-3-title" class="text-xl font-extrabold text-ink sm:text-2xl">Step 3 — Model</h2>
+            <p class="mt-2 text-sm text-slate-600">Tell us the exact model so we can match it against recent resale demand.</p>
+            <div data-field class="mt-6 max-w-lg">
+              <label for="model" class="block text-sm font-bold text-ink">Model name or number</label>
+              <input id="model" name="model" data-label="Model" type="text" required minlength="2" autocomplete="off" placeholder="e.g. iPhone 13, Latitude 5420"
+                class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+              <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+            </div>
+          </section>
+
+          <!-- STEP 4 -->
+          <section data-step="4" class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card sm:p-8" aria-labelledby="step-4-title" hidden>
+            <h2 id="step-4-title" class="text-xl font-extrabold text-ink sm:text-2xl">Step 4 — Condition</h2>
+            <p class="mt-2 text-sm text-slate-600">Be honest about condition — it affects the estimate more than anything else.</p>
+            <fieldset data-radio-group="condition" class="mt-6">
+              <legend class="text-sm font-bold text-ink">Overall condition</legend>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2">
+                <label for="cond-excellent" class="flex cursor-pointer items-start gap-3 rounded-xl border border-sage-200 bg-white px-4 py-3 transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50">
+                  <input id="cond-excellent" type="radio" name="condition" value="Excellent" class="mt-1 h-4 w-4">
+                  <span><span class="block text-sm font-bold text-ink">Excellent</span><span class="block text-xs text-slate-600">Works perfectly, minimal cosmetic marks.</span></span>
+                </label>
+                <label for="cond-verygood" class="flex cursor-pointer items-start gap-3 rounded-xl border border-sage-200 bg-white px-4 py-3 transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50">
+                  <input id="cond-verygood" type="radio" name="condition" value="Very Good" class="mt-1 h-4 w-4">
+                  <span><span class="block text-sm font-bold text-ink">Very Good</span><span class="block text-xs text-slate-600">Light marks, no functional impact.</span></span>
+                </label>
+                <label for="cond-good" class="flex cursor-pointer items-start gap-3 rounded-xl border border-sage-200 bg-white px-4 py-3 transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50">
+                  <input id="cond-good" type="radio" name="condition" value="Good" class="mt-1 h-4 w-4">
+                  <span><span class="block text-sm font-bold text-ink">Good</span><span class="block text-xs text-slate-600">Visible everyday wear, works as intended.</span></span>
+                </label>
+                <label for="cond-fair" class="flex cursor-pointer items-start gap-3 rounded-xl border border-sage-200 bg-white px-4 py-3 transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50">
+                  <input id="cond-fair" type="radio" name="condition" value="Fair" class="mt-1 h-4 w-4">
+                  <span><span class="block text-sm font-bold text-ink">Fair</span><span class="block text-xs text-slate-600">Heavy wear or dents, still functional.</span></span>
+                </label>
+                <label for="cond-damaged" class="flex cursor-pointer items-start gap-3 rounded-xl border border-sage-200 bg-white px-4 py-3 transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50 sm:col-span-2">
+                  <input id="cond-damaged" type="radio" name="condition" value="Damaged" class="mt-1 h-4 w-4">
+                  <span><span class="block text-sm font-bold text-ink">Damaged</span><span class="block text-xs text-slate-600">Cracked screen or non-working parts — offered for recycling value only.</span></span>
+                </label>
+              </div>
+              <p data-error hidden class="mt-2 text-xs font-semibold text-red-600"></p>
+            </fieldset>
+          </section>
+
+          <!-- STEP 5 -->
+          <section data-step="5" class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card sm:p-8" aria-labelledby="step-5-title" hidden>
+            <h2 id="step-5-title" class="text-xl font-extrabold text-ink sm:text-2xl">Step 5 — Device Details</h2>
+            <p class="mt-2 text-sm text-slate-600">Rough answers are fine — choose “Not sure” where you are unsure.</p>
+
+            <div class="mt-6 grid gap-5 sm:grid-cols-2">
+              <div data-field>
+                <label for="storage" class="block text-sm font-bold text-ink">Storage</label>
+                <select id="storage" name="storage" class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white pl-4 pr-10 text-sm text-ink focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+                  <option value="">Not sure</option>
+                  <option value="64 GB">64 GB</option>
+                  <option value="128 GB">128 GB</option>
+                  <option value="256 GB">256 GB</option>
+                  <option value="512 GB SSD">512 GB</option>
+                  <option value="1 TB SSD">1 TB SSD</option>
+                </select>
+                <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+              </div>
+
+              <div data-field>
+                <label for="ram" class="block text-sm font-bold text-ink">RAM (memory)</label>
+                <select id="ram" name="ram" class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white pl-4 pr-10 text-sm text-ink focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+                  <option value="">Not sure</option>
+                  <option value="2 GB">2 GB</option>
+                  <option value="4 GB">4 GB</option>
+                  <option value="8 GB">8 GB</option>
+                  <option value="16 GB">16 GB</option>
+                </select>
+                <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+              </div>
+
+              <div data-field>
+                <label for="age" class="block text-sm font-bold text-ink">Device age</label>
+                <select id="age" name="age" class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white pl-4 pr-10 text-sm text-ink focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+                  <option value="">Not sure</option>
+                  <option value="Under 1 year">Under 1 year</option>
+                  <option value="1–2 years">1–2 years</option>
+                  <option value="2–3 years">2–3 years</option>
+                  <option value="3–5 years">3–5 years</option>
+                  <option value="Over 5 years">Over 5 years</option>
+                </select>
+                <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+              </div>
+
+              <fieldset data-radio-group="charger" class="sm:col-span-1">
+                <legend class="text-sm font-bold text-ink">Charger available?</legend>
+                <div class="mt-2 grid grid-cols-2 gap-3">
+                  <label for="charger-yes" class="flex min-h-12 cursor-pointer items-center gap-2 rounded-xl border border-sage-200 px-4 py-2 text-sm font-semibold text-ink transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50 has-[:checked]:text-brand-800">
+                    <input id="charger-yes" type="radio" name="charger" value="yes" class="h-4 w-4">Yes
+                  </label>
+                  <label for="charger-no" class="flex min-h-12 cursor-pointer items-center gap-2 rounded-xl border border-sage-200 px-4 py-2 text-sm font-semibold text-ink transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50 has-[:checked]:text-brand-800">
+                    <input id="charger-no" type="radio" name="charger" value="no" class="h-4 w-4">No
+                  </label>
+                </div>
+                <p data-error hidden class="mt-2 text-xs font-semibold text-red-600"></p>
+              </fieldset>
+            </div>
+
+            <fieldset class="mt-6">
+              <legend class="text-sm font-bold text-ink">Accessories included</legend>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <label for="acc-charger" class="flex min-h-12 cursor-pointer items-center gap-2 rounded-xl border border-sage-200 px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50">
+                  <input id="acc-charger" type="checkbox" name="accessories" value="Charger" class="h-4 w-4 rounded border-sage-200">Charger
+                </label>
+                <label for="acc-box" class="flex min-h-12 cursor-pointer items-center gap-2 rounded-xl border border-sage-200 px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50">
+                  <input id="acc-box" type="checkbox" name="accessories" value="Original box" class="h-4 w-4 rounded border-sage-200">Original box
+                </label>
+                <label for="acc-cover" class="flex min-h-12 cursor-pointer items-center gap-2 rounded-xl border border-sage-200 px-4 py-2 text-sm font-medium text-ink transition-colors hover:border-brand-700 has-[:checked]:border-brand-700 has-[:checked]:bg-sage-50">
+                  <input id="acc-cover" type="checkbox" name="accessories" value="Case or cover" class="h-4 w-4 rounded border-sage-200">Case or cover
+                </label>
+              </div>
+            </fieldset>
+          </section>
+
+          <!-- STEP 6 -->
+          <section data-step="6" class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card sm:p-8" aria-labelledby="step-6-title" hidden>
+            <h2 id="step-6-title" class="text-xl font-extrabold text-ink sm:text-2xl">Step 6 — Contact Information</h2>
+            <p class="mt-2 text-sm text-slate-600">We use these details only to respond to this enquiry.</p>
+
+            <div class="mt-6 grid gap-5 sm:grid-cols-2">
+              <div data-field class="sm:col-span-2">
+                <label for="sell-name" class="block text-sm font-bold text-ink">Full name</label>
+                <input id="sell-name" name="name" data-label="Full name" type="text" required minlength="2" autocomplete="name" placeholder="Your name"
+                  class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+                <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+              </div>
+
+              <div data-field>
+                <label for="sell-email" class="block text-sm font-bold text-ink">Email</label>
+                <input id="sell-email" name="email" data-label="Email" type="email" required autocomplete="email" placeholder="you@example.com"
+                  class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+                <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+              </div>
+
+              <div data-field>
+                <label for="sell-phone" class="block text-sm font-bold text-ink">Phone</label>
+                <input id="sell-phone" name="phone" data-label="Phone" type="tel" required autocomplete="tel" placeholder="+91 90000 00000"
+                  class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+                <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+              </div>
+
+              <div data-field class="sm:col-span-2">
+                <label for="sell-city" class="block text-sm font-bold text-ink">City</label>
+                <input id="sell-city" name="city" data-label="City" type="text" required minlength="2" autocomplete="address-level2" placeholder="City you are in"
+                  class="mt-2 h-12 w-full rounded-xl border border-sage-200 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+                <p data-error hidden class="mt-1.5 text-xs font-semibold text-red-600"></p>
+              </div>
+            </div>
+
+            <p class="mt-6 rounded-xl bg-accent-100 p-4 text-xs leading-relaxed text-accent-700">
+              This is a frontend demonstration form. The estimate is calculated in your browser from sample data — nothing is sent to a server and the amount is not a guaranteed offer.
+            </p>
+          </section>
+
+          <!-- CONTROLS -->
+          <div data-sell-controls class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <button type="button" data-sell-prev class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-sage-200 bg-white px-6 py-3 text-sm font-bold text-ink transition-colors hover:border-brand-700 hover:text-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+              Back
+            </button>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <button type="button" data-sell-next class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border-2 border-brand-700 bg-white px-6 py-3 text-sm font-bold text-brand-700 transition-colors hover:bg-sage-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">
+                Continue
+                <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12l-7.5 7.5M21 12H3"/></svg>
+              </button>
+              <button type="submit" data-sell-submit class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand-700 px-6 py-3 text-sm font-bold text-white shadow-sm transition-colors hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">
+                Get Estimated Value
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- RESULT -->
+        <div data-sell-result hidden class="mt-6"></div>
+      </div>
+
+      <!-- ASIDE -->
+      <aside class="lg:sticky lg:top-28 lg:self-start" aria-label="How trade-in works">
+        <div class="rounded-2xl border border-sage-200 bg-white p-6 shadow-card">
+          <h2 class="text-lg font-extrabold text-ink">How it works</h2>
+          <ol class="mt-4 space-y-4">
+            <li class="flex gap-3">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-700 text-sm font-bold text-white">1</span>
+              <p class="text-sm text-slate-600"><strong class="block text-ink">Tell us about your device</strong>Six short steps, roughly two minutes.</p>
+            </li>
+            <li class="flex gap-3">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-700 text-sm font-bold text-white">2</span>
+              <p class="text-sm text-slate-600"><strong class="block text-ink">Receive an estimate</strong>An indicative range based on your answers.</p>
+            </li>
+            <li class="flex gap-3">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-700 text-sm font-bold text-white">3</span>
+              <p class="text-sm text-slate-600"><strong class="block text-ink">Send your device</strong>We share packing instructions once an offer is confirmed.</p>
+            </li>
+            <li class="flex gap-3">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-brand-700 text-sm font-bold text-white">4</span>
+              <p class="text-sm text-slate-600"><strong class="block text-ink">Get paid</strong>Settlement after inspection confirms the grade.</p>
+            </li>
+          </ol>
+          <div class="mt-6 rounded-xl bg-accent-100 p-4 text-xs leading-relaxed text-accent-700">
+            <strong class="block font-bold">Reminder</strong>Back up your data and sign out of accounts before sending any device. We data-wipe every unit we receive.
+          </div>
+        </div>
+
+        <div class="mt-5 rounded-2xl border border-sage-200 bg-white p-6 shadow-card">
+          <h2 class="text-lg font-extrabold text-ink">Prefer to buy instead?</h2>
+          <p class="mt-2 text-sm text-slate-600">Browse the demo catalogue of quality-checked refurbished devices.</p>
+          <a href="products.html" class="mt-4 inline-flex min-h-11 items-center rounded-xl bg-brand-700 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">Shop refurbished</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== VALUE FACTORS ===================== -->
+  <section class="bg-white py-14 sm:py-20" aria-labelledby="factors-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center" data-reveal>
+        <h2 id="factors-title" class="text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">What affects your estimate?</h2>
+        <p class="mt-3 text-base text-slate-600">Four things decide most of your device's trade-in value.</p>
+      </div>
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl border border-sage-200 bg-sage-50 p-6" data-reveal><p class="text-3xl font-extrabold text-brand-700">01</p><h3 class="mt-3 font-bold text-ink">Condition</h3><p class="mt-1.5 text-sm text-slate-600">Screen, body and buttons matter most — be honest for an accurate range.</p></div>
+        <div class="rounded-2xl border border-sage-200 bg-sage-50 p-6" data-reveal><p class="text-3xl font-extrabold text-brand-700">02</p><h3 class="mt-3 font-bold text-ink">Age &amp; model</h3><p class="mt-1.5 text-sm text-slate-600">Newer models and higher specs hold value longer.</p></div>
+        <div class="rounded-2xl border border-sage-200 bg-sage-50 p-6" data-reveal><p class="text-3xl font-extrabold text-brand-700">03</p><h3 class="mt-3 font-bold text-ink">Battery health</h3><p class="mt-1.5 text-sm text-slate-600">Strong battery readings lift the offer on phones and tablets.</p></div>
+        <div class="rounded-2xl border border-sage-200 bg-sage-50 p-6" data-reveal><p class="text-3xl font-extrabold text-brand-700">04</p><h3 class="mt-3 font-bold text-ink">What's in the box</h3><p class="mt-1.5 text-sm text-slate-600">Original chargers and packaging add a little extra.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PREP CHECKLIST ===================== -->
+  <section class="border-y border-sage-200 bg-sage-50 py-10 sm:py-14" aria-labelledby="prep-title">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center" data-reveal>
+        <h2 id="prep-title" class="text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">Before you send it</h2>
+        <p class="mt-2 text-sm text-slate-600">A two-minute checklist that protects you and speeds up payment.</p>
+      </div>
+      <ol class="mx-auto mt-6 grid max-w-4xl gap-3 sm:grid-cols-2" data-reveal>
+        <li class="flex items-center gap-3 rounded-2xl border border-sage-200 bg-white px-4 py-3 text-sm font-semibold text-ink"><span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand-700 text-xs font-bold text-white">✓</span>Back up photos and files</li>
+        <li class="flex items-center gap-3 rounded-2xl border border-sage-200 bg-white px-4 py-3 text-sm font-semibold text-ink"><span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand-700 text-xs font-bold text-white">✓</span>Sign out of all accounts</li>
+        <li class="flex items-center gap-3 rounded-2xl border border-sage-200 bg-white px-4 py-3 text-sm font-semibold text-ink"><span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand-700 text-xs font-bold text-white">✓</span>Remove SIM and memory cards</li>
+        <li class="flex items-center gap-3 rounded-2xl border border-sage-200 bg-white px-4 py-3 text-sm font-semibold text-ink"><span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand-700 text-xs font-bold text-white">✓</span>Pack with padding in a snug box</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER CTA ===================== -->
+  <section class="bg-brand-200 py-14 sm:py-20" aria-labelledby="newsletter-title">
+    <div class="mx-auto max-w-3xl px-4 text-center sm:px-6" data-reveal>
+      <p class="inline-flex items-center gap-2 rounded-full bg-brand-800/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-800">Newsletter</p>
+      <h2 id="newsletter-title" class="mt-4 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Get renewed deals in your inbox</h2>
+      <p class="mx-auto mt-3 max-w-xl text-base text-slate-700">Fresh trade-in tips and the week's best refurbished picks. One email a month, unsubscribe anytime.</p>
+      <form data-newsletter-form class="mx-auto mt-7 flex max-w-lg flex-col gap-3 sm:flex-row" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input id="newsletter-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email"
+          class="h-12 flex-1 rounded-xl border border-brand-700/25 bg-white px-4 text-sm text-ink placeholder:text-slate-400 focus:border-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-700/25">
+        <button type="submit" class="inline-flex min-h-12 items-center justify-center rounded-xl bg-brand-700 px-6 py-3 text-sm font-bold text-white transition hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">Subscribe</button>
+      </form>
+      <p data-newsletter-note class="mt-3 text-xs text-slate-600" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="./js/data.js" defer></script>
+<script src="./js/navbar.js" defer></script>
+<script src="./js/footer.js" defer></script>
+<script src="./js/main.js" defer></script>
+<script src="./js/sell-device.js" defer></script>
+<script>
+  (function () {
+    function init() {
+      var form = document.querySelector('[data-newsletter-form]');
+      if (!form || form.dataset.bound === 'true') return;
+      form.dataset.bound = 'true';
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var input = form.querySelector('input[type="email"]');
+        var note = document.querySelector('[data-newsletter-note]');
+        var value = (input.value || '').trim();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value)) {
+          if (note) note.textContent = 'Please enter a valid email address.';
+          input.focus();
+          return;
+        }
+        if (note) note.textContent = 'Thanks — you are on the list! (Demo signup, nothing was sent.)';
+        form.reset();
+        if (window.ReTech && window.ReTech.toast) window.ReTech.toast('Subscribed! Watch your inbox for renewed deals.');
+      });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+    else init();
+  })();
+</script>
+</body>
+</html>
+
+
