@@ -225,6 +225,11 @@
       'html.dark .text-brand-700{color:#86efac!important}' +
       'html.dark .text-brand-800{color:#bbf7d0!important}' +
       'html.dark .bg-sage-100.text-brand-700,html.dark .bg-sage-100 .text-brand-700{color:#86efac!important}' +
+      'html.dark .bg-brand-200{background-color:#14532d!important}' +
+      'html.dark .hover\\:bg-sage-50:hover,html.dark .focus-visible\\:bg-sage-50:focus-visible{background-color:#334155!important}' +
+      'html.dark .hover\\:bg-sage-100:hover,html.dark .focus-visible\\:bg-sage-100:focus-visible{background-color:#334155!important}' +
+      'html.dark .hover\\:bg-white:hover,html.dark .focus-visible\\:bg-white:focus-visible{background-color:#334155!important}' +
+      'html.dark .hover\\:text-brand-700:hover,html.dark .focus-visible\\:text-brand-700:focus-visible{color:#86efac!important}' +
       'html.dark img{filter:brightness(.92)}' +
       'html.dark input,html.dark select,html.dark textarea{background-color:#0f172a!important;color:#e2e8f0!important;border-color:#334155!important}';
     document.head.appendChild(style);
@@ -264,12 +269,11 @@
       '</button>' +
       /* RTL toggle */
       '<button type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout" title="Toggle RTL / LTR layout" ' +
-      'class="hidden xl:flex h-11 min-w-11 items-center justify-center gap-1.5 rounded-xl border border-sage-200 px-2.5 text-ink transition-colors hover:border-brand-700 hover:text-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">' +
-      icon('rtl', 'h-5 w-5') +
+      'class="hidden xl:flex h-11 min-w-11 items-center justify-center rounded-xl border border-sage-200 px-3.5 text-ink transition-colors hover:border-brand-700 hover:text-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">' +
       '<span data-rtl-label class="text-xs font-bold">RTL</span>' +
       '</button>' +
       /* Navbar CTA */
-      '<a href="sell-device.html" class="hidden items-center gap-1.5 rounded-xl bg-brand-700 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 xl:inline-flex">' +
+      '<a href="sell-device.html" class="hidden h-11 items-center gap-1.5 rounded-xl bg-brand-700 px-4 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 xl:inline-flex">' +
       icon('check', 'h-4 w-4') +
       'Sell Your Device</a>' +
       /* Hamburger */
@@ -283,11 +287,11 @@
       '</span>' +
       '</button>' +
       '</div></div>' +
-      /* Mobile menu */
-      '<div id="mobile-menu" hidden class="border-t border-sage-200 bg-white xl:hidden">' +
+      /* Mobile menu — absolute overlay so opening it never pushes the page down */
+      '<div id="mobile-menu" hidden class="absolute inset-x-0 top-full z-50 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-sage-200 bg-white shadow-xl xl:hidden">' +
       '<div class="mx-auto max-w-7xl space-y-1 px-4 py-4 sm:px-6">' +
       mobileLinksMarkup() +
-      '<a href="sell-device.html" data-mobile-link class="mt-3 flex items-center justify-center gap-2 rounded-2xl bg-brand-700 px-4 py-3 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">' +
+      '<a href="sell-device.html" data-mobile-link class="mt-3 flex h-11 items-center justify-center gap-2 rounded-2xl bg-brand-700 px-4 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">' +
       'Sell Your Device</a>' +
       '<div class="mt-4 flex items-center gap-3 border-t border-sage-200 pt-4">' +
       '<button type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Toggle dark / light theme" class="flex h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-sage-200 text-ink transition-colors hover:border-brand-700 hover:text-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">' +
@@ -296,7 +300,6 @@
       '<span class="text-sm font-semibold">Theme</span>' +
       '</button>' +
       '<button type="button" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout" title="Toggle RTL / LTR layout" class="flex h-11 flex-1 items-center justify-center gap-2 rounded-xl border border-sage-200 text-ink transition-colors hover:border-brand-700 hover:text-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700">' +
-      icon('rtl', 'h-5 w-5') +
       '<span data-rtl-label class="text-sm font-semibold">RTL</span>' +
       '</button>' +
       '</div>' +

@@ -77,12 +77,35 @@
     );
   }
 
+  function contactMarkup() {
+    var store = RT.store || {};
+    function row(iconPath, body) {
+      return (
+        '<p class="flex items-center gap-2.5 text-sm text-white/80">' +
+        icon(iconPath, 'h-4 w-4 shrink-0 text-sage-200') +
+        body +
+        '</p>'
+      );
+    }
+    return (
+      '<div class="min-w-0 lg:col-span-1">' +
+      '<h2 class="text-sm font-bold uppercase tracking-[0.16em] text-sage-200">Contact</h2>' +
+      '<address class="mt-4 space-y-3 not-italic">' +
+      row(mailIcon, '<a href="mailto:' + store.email + '" class="transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sage-200">' + store.email + '</a>') +
+      row(phoneIcon, '<a href="tel:' + (store.phone || '').replace(/[^+\d]/g, '') + '" class="transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sage-200">' + store.phone + '</a>') +
+      row(clockIcon, store.hours) +
+      row(pinIcon, store.location) +
+      '</address>' +
+      '</div>'
+    );
+  }
+
   function template() {
     var store = RT.store || {};
     return (
       '<footer class="bg-brand-800 text-white">' +
       '<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">' +
-      '<div class="grid items-start gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">' +
+      '<div class="grid items-start gap-10 sm:grid-cols-2 lg:grid-cols-6 lg:gap-8">' +
 
       /* Brand column */
       '<div class="lg:col-span-2">' +
@@ -111,12 +134,6 @@
         .join('') +
       '</ul>' +
 
-      '<address class="mt-6 space-y-2 text-sm not-italic text-white/80">' +
-      '<a href="mailto:' + store.email + '" class="flex items-center gap-2.5 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sage-200">' + icon(mailIcon, 'h-4 w-4 shrink-0 text-sage-200') + store.email + '</a>' +
-      '<a href="tel:' + (store.phone || '').replace(/[^+\d]/g, '') + '" class="flex items-center gap-2.5 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sage-200">' + icon(phoneIcon, 'h-4 w-4 shrink-0 text-sage-200') + store.phone + '</a>' +
-      '<p class="flex items-start gap-2.5">' + icon(clockIcon, 'mt-0.5 h-4 w-4 shrink-0 text-sage-200') + store.hours + '</p>' +
-      '<p class="flex items-start gap-2.5">' + icon(pinIcon, 'mt-0.5 h-4 w-4 shrink-0 text-sage-200') + store.location + '</p>' +
-      '</address>' +
       '<div class="mt-8 flex items-center gap-4">' +
       '<a href="#" aria-label="Facebook" class="text-white/75 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sage-200">' +
       '<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>' +
@@ -132,6 +149,9 @@
 
       /* Link columns */
       columns.map(columnMarkup).join('') +
+
+      /* Contact column */
+      contactMarkup() +
       '</div>' +
 
       /* Divider + legal */

@@ -649,7 +649,7 @@
     email: 'hello@retech.example',
     phone: '+91 90000 00000',
     hours: 'Monday to Saturday, 10:00 – 19:00 IST',
-    location: 'Demo address — replace with your registered business location',
+    location: 'Bengaluru, Karnataka, India',
     currency: '₹'
   };
 
